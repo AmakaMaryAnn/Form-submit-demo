@@ -54,9 +54,17 @@
 
                     </div>
                 </div>
+            
                 <div class="contactForm">
                  <form action="https://formsubmit.co/f4ca81c5498bbe9dfdd34f944b535a30" method="POST">
-                    <!-- onsubmit="sendEmail(); reset(); return false;" -->
+                     
+                      <!-- HONEYPOT -->
+                   <input type="text" name="_honey" style="display:none;">
+
+                   <!-- Disable Captcha -->
+                   <input type="hidden" name="_captcha" value="false">
+                     
+                     
                   <h2>Send Message</h2>
                    <div class="inputBox">
                    <input type="text" id="name" name="Name" required="required">
@@ -219,20 +227,4 @@
             }
         }
     </style>
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                secureToken: "a8284da9-6679-49ca-87db-8b5c41adbcb2",
-            To : 'onwugharamary@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "New Contact Form Enquiry",
-            Body : "Name: " + document.getElementById("name").value
-                 + "<br> Phone no: " + document.getElementById("phone").value
-                 + "<br> Message: " + document.getElementById("message").value
-          }).then(
-          message => alert("Message Sent Successfully")
-          );
-        }
-        </script> -->
 </html>

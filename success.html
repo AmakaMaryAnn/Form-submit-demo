@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" 
+        integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="contact">
+            
+                
+                <div class="contactForm">
+
+                   <!-- HONEYPOT -->
+                   <input type="text" name="_honey" style="display:none;">
+
+                   <!-- Disable Captcha -->
+                   <input type="hidden" name="_captcha" value="false">
+
+                   <input type="hidden" name="_next" value="https://amakamaryann.github.io/Form-submit-demo/success.html">
+
+                   <div class="content">
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br><br><br><br>
+                <p class="success">Success! We will get back to you very soon.</p>
+                </div>
+        </div>
+        </section>
+    </body>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .contact {
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: gray;
+        }
+
+        .contact .content {
+            max-width: 800px;
+            text-align: center;
+        }
+        .contact .content h2 {
+            font-size: 36px;
+            font-weight: 500;
+            color: #00bcd4;
+        }
+        .contact .content p {
+            font-weight: 300;
+            color: #000000;
+        }
+        
+        .contactForm {
+            width: 40%;
+            padding: 40px;
+            background: #fff;
+            min-height: 50vh;
+        }
+        .contact .content p.success {
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 100;
+            color: #000000;
+            font-size: 20px;
+        }        
+        @media (max-width: 991px)
+        {
+            .contact {
+                padding: 50px;
+            }
+            .container {
+                flex-direction: column;
+            }
+            .container .contactInfo {
+                margin-bottom: 40px;
+            }
+            .container .contactInfo, .contactForm{
+                width: 100%;
+            }
+        }
+    </style>
+   
+</html>
